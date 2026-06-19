@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English 6</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap');
+        :root {
+            --primary-color: #5D5FEF;
+            --bg-color: #f4f7f6;
+            --text-color: #2b2d42;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+ 
+        h1, h2, .btn {
+            font-family: 'Poppins', sans-serif;
+        }
+
+       header {
+            background: linear-gradient(135deg, #5D5FEF, #8A2387);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            font-weight: 700;
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 1.25rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 40px;
+            padding-bottom: 60px;
+        }
+
+        .app-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(93, 95, 239, 0.2);
+        }
+
+        .app-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .app-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-title {
+            margin: 0 0 12px 0;
+            font-size: 1.6rem;
+            color: #1d3557;
+            font-weight: 600;
+        }
+
+        .app-description {
+            margin: 0 0 25px 0;
+            color: #6c757d;
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(93, 95, 239, 0.3);
+        }
+
+        .btn:hover {
+            background-color: #4A4CBF;
+            box-shadow: 0 6px 12px rgba(93, 95, 239, 0.4);
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>English 6</h1>
+        <p>application  gallary.</p>
+    </header>
+
+    <div class="container">
+        <main class="app-grid">
+            
+            <div class="app-card">
+                <img src="direction.png">
+                <div class="app-content">
+                    <h2 class="app-title">Direction game</h2>
+                    <p class="app-description">2번째 시간</p>
+                    <a href="https://whereisabclibrarymint.netlify.app/" class="btn" target="_blank">앱 실행하기</a>
+                </div>
+            </div>
+
+            <div class="app-card">
+                <img src="FindthePlace.png">
+                <div class="app-content">
+                    <h2 class="app-title">Find the Place!</h2>
+                    <p class="app-description">3번째 시간</p>
+                    <a href="https://direction123.netlify.app/" class="btn" target="_blank">앱 실행하기</a>
+                </div>
+            </div>
+
+            <div class="app-card">
+                <img src="mission.png">
+                <div class="app-content">
+                    <h2 class="app-title">Mission:Impossible</h2>
+                    <p class="app-description">6번째 시간</p>
+                    <a href="https://missionimpossibledirection.netlify.app/" class="btn" target="_blank">앱 실행하기</a>
+                </div>
+            </div>
+
+            </main>
+    </div>
+
+</body>
+</html>
